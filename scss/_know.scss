@@ -1,0 +1,80 @@
+.know-wrap {
+    width: 100%;
+    background-color: $accent-primary-light;
+    padding: 50px;
+
+    .know-tab-wrap {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px 50px;
+
+        .know-tab {
+            padding: 10px 40px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            color: $text-gray;
+            cursor: pointer;
+
+            &::after {
+                @include pointDownElement;
+                bottom: -8px;
+                opacity: 0;
+            }
+        }
+
+        .know-tab:nth-child(2){
+            border-width: 1px 0px 1px 0px;
+        }
+
+        .know-tab.active {
+            position: relative;
+            background-color: $primary-color;
+            color: $text-light;
+            cursor: default;
+            
+            &::after {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .know-tab-content-wrap {
+        max-width: 850px;
+        margin: auto;
+
+        .know-tab-content {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .know-tab-card {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .know-tab-card__desc {
+                    padding: 0px 20px;
+
+                    h3 {
+                        color: $primary-dark-color;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        color: $text-dark;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            display: none;
+        
+            &.active {
+                display: flex;
+            }
+        }
+        
+    }
+}

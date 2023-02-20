@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104.44" height="104.4" viewBox="0 0 104.44 104.4">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Ellipse_56_copy_2" data-name="Ellipse 56 copy 2" cx="43.68" cy="43.65" rx="43.68" ry="43.65" transform="translate(275.41 1583.55)" fill="#69d3ff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_149" data-name="Group 149" transform="translate(-264.96 -1588.99)">
+    <ellipse id="Ellipse_56_copy_6" data-name="Ellipse 56 copy 6" cx="52.22" cy="52.2" rx="52.22" ry="52.2" transform="translate(264.96 1588.99)" fill="#bae9fd"/>
+    <g id="Ellipse_56_copy_2-2" data-name="Ellipse 56 copy 2" transform="translate(-1 14)">
+      <ellipse id="Ellipse_56_copy_2-3" data-name="Ellipse 56 copy 2" cx="43.68" cy="43.65" rx="43.68" ry="43.65" transform="translate(275.41 1583.55)" fill="#69d3ff"/>
+      <g id="Clip" clip-path="url(#clip-path)">
+        <path id="Rounded_Rectangle_50_copy_3" data-name="Rounded Rectangle 50 copy 3" d="M275.7,1587.225,397.865,1566.9a.923.923,0,0,1,1.039.789l26.063,158.318a.926.926,0,0,1-.731,1.084l-149.27-138.782A.927.927,0,0,1,275.7,1587.225Z" fill="#eaf7fc"/>
+      </g>
+    </g>
+    <path id="_3" data-name="3" d="M307.7,1646.891a5.9,5.9,0,0,1-5.858-5.863v-27.565a4.409,4.409,0,0,1,4.232-4.375l-.184-.03a4.588,4.588,0,0,1,4.4-4.406h14.664l7.7,8.837v24.59a4.587,4.587,0,0,1-4.4,4.405h-1.1a4.588,4.588,0,0,1-4.4,4.406Zm-1.81-35.578a1.927,1.927,0,0,1,.25-.016l-.25-.037Z" transform="translate(-1 14)" fill="#4569b1"/>
+    <ellipse id="Ellipse_40" data-name="Ellipse 40" cx="9.02" cy="9.03" rx="9.02" ry="9.03" transform="translate(321.97 1646.57)" fill="#d61f27"/>
+  </g>
+</svg>

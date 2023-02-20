@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(-1335 -191)">
+    <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(1012.971 -221.226)">
+      <g id="Group_84" data-name="Group 84">
+        <rect id="Rectangle_42" data-name="Rectangle 42" width="3.676" height="1.028" transform="translate(325.865 418.531)"/>
+        <path id="Path_243" data-name="Path 243" d="M328.549,429.17v-2.145h-.964v2.145h-2.059v.927h2.059v2.161h.964V430.1H330.6v-.927Zm0,0"/>
+        <path id="Path_244" data-name="Path 244" d="M337.113,420.147l.682.682,1.533-1.532,1.452,1.456.653-.654-1.452-1.455,1.515-1.516-.682-.681L339.3,417.96l-1.452-1.452-.654.654,1.456,1.453Zm0,0"/>
+        <rect id="Rectangle_43" data-name="Rectangle 43" width="3.649" height="0.934" transform="translate(338.141 427.814)"/>
+        <rect id="Rectangle_44" data-name="Rectangle 44" width="3.649" height="0.934" transform="translate(338.141 429.889)"/>
+      </g>
+      <rect id="Rectangle_45" data-name="Rectangle 45" width="22.389" height="22.389" rx="1.791" transform="translate(322.835 413.032)" fill="none" stroke="#000" stroke-width="1.611"/>
+      <line id="Line_77" data-name="Line 77" y2="22.389" transform="translate(334.029 413.032)" fill="none" stroke="#000" stroke-width="1.711"/>
+      <line id="Line_78" data-name="Line 78" x1="22.389" transform="translate(322.835 424.226)" fill="none" stroke="#000" stroke-width="1.711"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1347,214.195h-9.4a1.791,1.791,0,0,1-1.791-1.791V193.6a1.791,1.791,0,0,1,1.791-1.791H1356.4a1.791,1.791,0,0,1,1.791,1.791V212.4a1.791,1.791,0,0,1-1.791,1.791Z" fill="#fff"/>
+  </g>
+</svg>

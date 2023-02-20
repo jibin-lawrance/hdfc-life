@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.001" height="13" viewBox="0 0 13.001 13">
+  <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(-1084 -4463.999)">
+    <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(697.443 4257.983)">
+      <rect id="Rectangle_38" data-name="Rectangle 38" width="2.787" height="8.77" transform="translate(386.721 210.247)" fill="#5a5b5e"/>
+      <path id="Path_205" data-name="Path 205" d="M388.115,209.049H388.1a1.587,1.587,0,1,1,.019,0Z" fill="#5a5b5e"/>
+      <path id="Path_206" data-name="Path 206" d="M399.557,219.017h-2.787v-4.692c0-1.179-.4-1.984-1.412-1.984a1.537,1.537,0,0,0-1.43,1.068,2.065,2.065,0,0,0-.092.711v4.9h-2.786s.036-7.947,0-8.769h2.786v1.242a2.748,2.748,0,0,1,2.511-1.448c1.833,0,3.209,1.252,3.209,3.946Z" fill="#5a5b5e"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1094.213,4477v-4.691c0-1.18-.4-1.984-1.412-1.984a1.536,1.536,0,0,0-1.429,1.067,2.061,2.061,0,0,0-.092.71v4.9h-2.785s.035-7.948,0-8.77h2.785v1.243a2.747,2.747,0,0,1,2.511-1.448c1.833,0,3.21,1.253,3.21,3.946V4477Zm-10.049,0v-8.77h2.789V4477Zm1.375-9.968a1.586,1.586,0,1,1,.019,0Z" fill="#fff"/>
+  </g>
+</svg>

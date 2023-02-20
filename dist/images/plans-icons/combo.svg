@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.996" height="40.004" viewBox="0 0 40.996 40.004">
+  <g id="Group_143" data-name="Group 143" transform="translate(-364.003 -621.996)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(237.227 276.607)">
+      <path id="Path_82" data-name="Path 82" d="M154.237,378.313a.725.725,0,0,1-.731.719H127.9a.725.725,0,0,1-.732-.719V346.5a.726.726,0,0,1,.732-.719h20.67l5.67,5.525Z" fill="#005e9e" stroke="#005e9e" stroke-linejoin="round" stroke-width="0.778"/>
+      <path id="Path_83" data-name="Path 83" d="M167.773,384.673a.725.725,0,0,1-.732.719H141.432a.725.725,0,0,1-.732-.719V352.858a.724.724,0,0,1,.732-.719H162.1l5.67,5.524Z" fill="#69d3ff"/>
+      <path id="Path_84" data-name="Path 84" d="M150.3,364.366a9.6,9.6,0,1,1-9.6-9.429A9.514,9.514,0,0,1,150.3,364.366Z" fill="#fff"/>
+      <line id="Line_11" data-name="Line 11" y2="9.762" transform="translate(140.702 359.486)" fill="none" stroke="#d51d25" stroke-width="2.202"/>
+      <line id="Line_12" data-name="Line 12" x1="9.935" transform="translate(135.734 364.366)" fill="none" stroke="#d51d25" stroke-width="2.017"/>
+    </g>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(237.227 276.607)">
+      <line id="Line_13" data-name="Line 13" x2="10.975" transform="translate(152.694 365.959)" fill="#fff" stroke="#fff" stroke-width="2.017"/>
+      <line id="Line_14" data-name="Line 14" x2="10.975" transform="translate(152.694 360.146)" fill="#fff" stroke="#fff" stroke-width="2.017"/>
+      <line id="Line_15" data-name="Line 15" x2="10.975" transform="translate(152.694 371.83)" fill="#fff" stroke="#fff" stroke-width="2.017"/>
+      <line id="Line_16" data-name="Line 16" x2="18" transform="translate(145.669 378.349)" fill="#fff" stroke="#fff" stroke-width="2.017"/>
+    </g>
+  </g>
+</svg>

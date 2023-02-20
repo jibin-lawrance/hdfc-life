@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104.24" height="104.2" viewBox="0 0 104.24 104.2">
+  <g id="Group_148" data-name="Group 148" transform="translate(-266.6 -1459.74)">
+    <ellipse id="Ellipse_56" data-name="Ellipse 56" cx="52.12" cy="52.1" rx="52.12" ry="52.1" transform="translate(266.6 1459.74)" fill="#bae9fd"/>
+    <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(-1 14)">
+      <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(275.345 1456.243)">
+        <line id="Line_20" data-name="Line 20" x1="4.222" transform="translate(31.157 46.186)" fill="none" stroke="#e71e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.191"/>
+        <line id="Line_21" data-name="Line 21" x1="2.187" transform="translate(25.089 46.186)" fill="none" stroke="#e71e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.191"/>
+        <line id="Line_22" data-name="Line 22" x1="11.424" transform="translate(23.933 52.723)" fill="none" stroke="#e71e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.191"/>
+        <line id="Line_23" data-name="Line 23" x1="2.187" transform="translate(17.852 52.723)" fill="none" stroke="#e71e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.191"/>
+        <line id="Line_24" data-name="Line 24" x1="16.951" transform="translate(18.664 59.099)" fill="none" stroke="#e71e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.191"/>
+        <line id="Line_25" data-name="Line 25" x1="2.188" transform="translate(12.251 59.099)" fill="none" stroke="#e71e2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.191"/>
+        <g id="Group_38" data-name="Group 38">
+          <path id="Path_124" data-name="Path 124" d="M39.9,43.859A10.027,10.027,0,0,1,49.93,33.833h0A10.027,10.027,0,0,1,59.961,43.858v11.28A10.028,10.028,0,0,1,49.93,65.163h0A10.026,10.026,0,0,1,39.9,55.137Z" fill="none" stroke="#2258a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.189"/>
+          <path id="Path_125" data-name="Path 125" d="M49.93,42.065V26.876s-1.1-6.206,5.394-7.615h3.244s6.492.28,6.492-6.91" fill="none" stroke="#2258a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.189"/>
+        </g>
+      </g>
+      <path id="Color_Overlay" data-name="Color Overlay" d="M315.241,1511.38V1500.1a10.027,10.027,0,0,1,10.033-10.026v-6.957s-1.1-6.205,5.394-7.615h3.244a7.212,7.212,0,0,0,3.4-.842l-8.23,16.162a10.025,10.025,0,0,1,6.221,9.276v11.28a10.032,10.032,0,0,1-20.065,0Zm-21.233,3.963h0Zm-6.413,0h0Zm11.682-6.376h0Zm-6.081,0h0Zm13.306-6.537h0Zm-6.068,0h0Zm39.972-33.835c0,3.48-1.521,5.21-3.091,6.069Z" fill="#05396e"/>
+    </g>
+  </g>
+</svg>

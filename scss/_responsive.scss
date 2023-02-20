@@ -1,0 +1,1321 @@
+@include media-1980 {
+
+    .hero-wrap {
+        max-width: 1262px;    
+    }
+
+    .about-wrap {
+        .about-tile-wrap {
+            .about-tile-right {
+                .about-tile-right-top , .about-tile-right-bottom {
+                    justify-content: flex-start;
+                    padding-inline-start: 90px;
+                } 
+            }
+        }
+    }
+}
+
+@include media-1136 {
+    .tools-wrap .calc-card-wrap .calc-card__desc {
+        min-height: 80px;
+    }
+
+    .contact-footer .contact-footer-box-wrap .contact-footer-box:nth-child(2) {
+        width: 120%;
+    }
+    
+    .contact-footer .contact-footer-box-wrap .contact-footer-box:nth-child(3) {
+        width: 70%;
+    }
+}
+
+@include media-1024 {
+    
+    .top-nav {
+    
+        &__list {
+            padding-left: 12%;
+        }
+    }    
+    
+    .section-divide-wrap {
+    
+        .section-divide:nth-child(1) {
+            width: 12%;
+        }
+        .section-divide:nth-child(2) {
+            width: 88%;
+        }
+    }   
+
+    .plans-slider-wrap {
+        padding: 0px 30px;
+
+        .plans-slides-wrap {
+            width: 95%;
+            margin: auto;
+        }  
+        
+        .plans-show-more {
+            display: none;
+        }
+    }
+
+    .plan-navigation-wrap {
+        padding: 0 5%;
+    }
+
+    .kc-wrap {
+        padding: 50px 0px 60px;
+    }
+
+    .about-wrap {
+        .about-tile-wrap {
+            .about-tile-left {
+                padding: 40px 30px 20px;
+
+                .about-tile-left-block {
+                    .about-tile-left-nav {
+                        flex-wrap: wrap;
+                        row-gap: 5px;
+                    }
+                }                
+            }
+        }
+
+        .about-card-wrap {
+            .about-card-slider-wrap {
+                width: 95%;
+                margin: auto;
+
+                @include slickArrows;
+
+                .slick-slide {
+                    height: 100%;
+                    img {
+                        display: inline;
+                    }  
+                    
+                    & > div {
+                        margin: 0px 15px;
+                        height: 100%;
+                    }
+
+                    .about-card-slide {
+                        height: 100%;
+                        display: flex !important;
+                    }                    
+                } 
+
+                .slick-track
+                {
+                    padding: 10px 0px;
+                    display: flex !important;
+                }
+                
+                .slick-slide
+                {
+                    height: inherit !important;
+                }                                
+            }
+        }        
+    }
+
+    .contact-footer {
+        .contact-footer-box-wrap {
+            flex-wrap: wrap;
+
+            .contact-footer-box:nth-child(2) {
+                width: 50%;
+            }
+            
+            .contact-footer-box:nth-child(3) {
+                width: 100%;
+            }            
+            .contact-footer-box {
+                width: 50%;
+
+                &.socials-wrap {
+                    width: 100%;
+                    margin-top: 30px;
+                }
+
+                .socials {
+                    max-width: 100%;
+                    margin-left: 0px;
+                }
+            }
+        }    
+    }
+}
+
+@include media-940 {
+    .mobile-nav {
+        position: relative;
+        @include flexCenter;
+        justify-content: space-between;
+        padding: 15px 20px;
+
+        .profile-action {
+            gap: 8px;
+            align-items: center
+        }
+
+        .profile-action__icon {
+            @include flexCenter;
+            width: 40px;
+            height: 40px;
+            padding: 0px;
+            border-radius: 50%;
+        }
+
+        //menu hamburger
+        .menu-btn {
+            position: relative;
+            z-index: 2;
+            height: 20px;
+            width: 30px;
+            margin-left: 10px;
+            cursor: pointer;
+            @include transistion-ease;
+        
+            &__burger {
+                position: absolute;
+                top: 10px;
+                width: 25px;
+                height: 3px;
+                background: $primary-color;
+                @include transistion-ease;
+        
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    width: 30px;
+                    height: 3px;
+                    background: $primary-color;
+                    @include transistion-ease;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    width: 30px;
+                    height: 3px;
+                    background: $primary-color;
+                    @include transistion-ease;
+                }
+        
+                &.open {
+                    // transform: rotate(180deg);
+                    background: transparent;
+        
+                    &::before {
+                        transform: rotate(45deg) translate(5px,8px);
+                    }
+        
+                    &::after {
+                        transform: rotate(-45deg) translate(6px,-10px);
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+
+        .section-divide-wrap {
+            .section-divide:nth-child(1) {
+                display: none;
+            }
+            .section-divide:nth-child(2) {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+
+        .top-nav {
+            display: none;
+            padding: 15px 0px;
+
+            .profile-action {
+                display: none;
+            }
+
+            & ul li a.active::after {
+                display: none;
+            }
+
+            &__list {
+                padding-left: 0;
+            }            
+        } 
+        
+        .bottom-nav {
+            display: none;
+            padding: 25px 0px 35px;
+
+            nav {
+                margin-bottom: 25px;
+            }
+
+            .search-wrap {
+                width: 100%;
+
+                .search-bar {
+                    flex-grow: 1;
+                    border: 1px solid #ddd;
+                    justify-content: right;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-wrap {
+        position: relative;
+
+        .hero-section {
+            padding-bottom: 40px;
+            
+            .slider-wrap {
+                width: 100% !important;
+                margin-bottom: 40px;
+                padding: 60px 30px 50px !important;
+    
+                .slide {
+                    text-align: center;
+    
+                    p {
+                        font-size: 15px;
+                        justify-content: center;
+                    }
+    
+                }
+                .slick-dots {
+                    bottom: -5px;
+                    text-align: center;
+                }
+    
+                h2 {
+                    span {
+                        display: block;
+                    }
+                }
+    
+                &::before {
+                    left: 25px !important;
+                    top: 35px !important;
+                }
+    
+                .slide-indi-wrap {
+                    justify-content: center;
+                }
+            }
+
+            .mobile-side-tab {
+                z-index: 1;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                top: 80px;
+                right: 0;
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                    @include flexCenter;
+                    background-color: $primary-dark-color;
+                    border-radius: 2px 0px 0px 2px;
+                    margin-bottom: 1px;
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }            
+        }
+
+        .hero-img-carousel-wrap .hero-img-carousel {
+            width: 100%;
+            
+            &:first-child {
+                display: none;
+            }
+            .slick-prev, .slick-next {
+                display: none !important;
+            }
+        }        
+
+    }  
+    
+    .hero-footer {
+        .link-wrap {
+            top: -80px;
+            left: 0;
+            bottom: auto;
+
+            .link-wrap-img {
+                padding: 10px;
+            }
+            .link-wrap-img::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                width: 140%;
+                right: -118%;
+                height: 100%;
+                background: #fff;
+                border: none;
+                -webkit-clip-path: polygon(0% 0%, 36% 0, 16% 53%, 37% 100%, 0% 100%);
+                clip-path: polygon(0% 0%, 36% 0, 16% 53%, 37% 100%, 0% 100%);
+            }
+        }
+
+        .hero-footer-search {
+            padding: 0px 20px;
+        }
+
+        .hero-footer-search__bar {
+            position: relative;
+
+            img:first-child{
+                display: none;
+            }
+
+            input {
+                padding: 0px 20px;
+            }
+
+            button {
+                padding: 13px 13px;
+                span {
+                    display: none;
+                }
+                img {
+                    display: block;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+    .plan-navigation-wrap {
+        padding: 0;
+        width: 95%;
+        margin: 40px auto;
+
+        .slick-slide > div {
+            margin: 10px;
+        }
+
+        @include slickArrows;
+    }    
+
+    .contact-body {
+        .contact-info-wrap {
+            flex-wrap: wrap;
+
+            .contact-info-card {
+                width: 50%;
+
+                &:last-child {
+                    width: 100%;
+                    border-top: 1px solid $background-gray;
+                }
+            }
+        }
+    }
+}
+
+@include media-812 {
+
+    .about-wrap {
+        .about-tile-wrap {
+            flex-direction: column;
+    
+            .about-tile-left {
+                width: 100%;
+                padding: 40px 30px 20px;
+    
+                .about-tile-left-block {
+                    max-width: 100%;
+
+                    .about-tile-left-nav {
+                        padding: 15px 29px;
+    
+                        li {
+                            padding: 0px 10px;
+                        }
+                    }
+                }
+            }
+            .about-tile-right {
+                width: 100%;
+    
+                .about-tile-right-top , .about-tile-right-bottom {
+                    width: 100%;
+                    padding: 32.5px 30px;
+                }
+            }
+        }
+        .about-card-wrap {
+            .about-card-slider-wrap {
+                .about-card-slide {
+                    .slick-dots {
+                        bottom: -15px;
+                    }
+                    .about-card-slide-cont {
+                        margin: 15px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .insurance-wrap {
+        .insurance-footer-top {
+            .inner-wrap > ul {
+                // flex-direction: column;
+    
+                & > li:first-child {
+                    padding: 10px 0px;
+                    // border-right: none;
+                    // margin: 0px -30px;
+                    // border-bottom: 1px solid $border-light-gray;                    
+                }
+    
+                ul {
+                    li:first-child {
+                        text-align: center;
+                    }
+
+                    li:last-child {
+                        border-right: 0px;
+                        padding-left: 20px !important;
+                    }
+    
+                    li {
+                        padding: 10px 15px !important;
+                    }
+                }
+            }
+        }
+    
+        .insurance-footer-bottom {
+            ul {
+                li {
+                    padding: 10px;
+                    width: 100%;
+                    img {
+                        max-width: 100%;
+                    }
+                    &:last-child {
+                        border-right: none;   
+                    }
+                }
+            }
+        }   
+    }  
+    
+    footer {
+        .bg-blue-gray {
+            .links-wrap {
+                gap: 30px;
+            
+                .links-box {
+                    .link-row {
+                        gap: 25px;
+                    }   
+                }
+            }
+        }    
+    }    
+}
+
+@include media-798 {
+    .tools-wrap .calc-card-wrap .calc-card__desc {
+        min-height: 100px;
+    }
+}
+
+@include media-774 {
+    .contact-footer-box-wrap {
+        flex-direction: column;
+
+        .contact-footer-box {
+            width: 100% !important;
+            padding: 25px 0px;
+            border-bottom: 1px dashed rgba($text-gray, .4);
+        }
+
+        .contact-footer-box:first-child {
+            padding-top: 0px;
+        }
+
+        .contact-footer-box:last-child {
+            padding-bottom: 0px;
+            border-bottom: none;
+            margin-top: 0 !important;
+        }
+    }    
+}
+
+@include media-768 {
+    .plan-navigation-wrap .slick-slide > div {
+        margin: 4px 8px 9px;
+    }     
+    
+    .tools-wrap {
+        padding: 50px 30px 60px;
+
+        .calc-card-wrap {
+            max-width: 95%;
+            position: relative;
+
+            @include slickArrows;
+
+            .slick-slide img {
+                display: inline;
+            }
+
+            .slick-slide > div {
+                margin: 0px 15px;
+            }
+
+            .calc-card__desc {
+                min-height: 80px;
+            }            
+        }        
+    }    
+
+    .insurance-wrap {
+        .insurance-slider-wrap {
+            max-width: 95%;
+            margin: 0px auto 50px;
+    
+            @include slickArrows;
+    
+            .slick-slide > div {
+                margin: 0px 15px;
+            }  
+            
+            .slick-slide {
+                height: 100%; 
+                
+                & > div {
+                    margin: 0px 15px;
+                    height: 100%;
+                }
+    
+                .insurance-slide {
+                    height: 100%;
+                    display: flex !important;
+                }                    
+            } 
+    
+            .slick-track
+            {
+                padding: 10px 0px;
+                display: flex !important;
+            }
+            
+            .slick-slide
+            {
+                height: inherit !important;
+            }   
+        }         
+    }   
+}
+
+@include media-736 {
+    .know-wrap {
+        .know-tab-wrap {
+            .know-tab {
+                width: 100%;
+                padding: 15px 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    .insurance-footer-top {
+        .inner-wrap > ul {
+            flex-direction: column;
+
+            & > li:first-child {
+                padding: 10px 0px;
+                border-right: none;
+                margin: 0px -30px;
+                border-bottom: 1px solid $border-light-gray;                    
+            }
+
+            ul {
+                li:first-child {
+                    text-align: center;
+                }
+
+                li:last-child {
+                    border-right: 0px;
+                    padding-left: 20px !important;
+                }
+
+                li {
+                    padding: 10px 15px !important;
+                }
+            }
+        }
+    }    
+}
+
+@include media-681 {
+    .tools-wrap .calc-card-wrap .calc-card__desc {
+        min-height: 100px;
+    }
+}
+
+@include media-667 {
+    .top-nav__list {
+        flex-direction: column;
+        row-gap: 5px;
+
+        ul:nth-child(2) {
+            margin-left: 0;
+        }
+    }
+
+    .know-wrap {
+        .know-tab-content-wrap {
+            .know-tab-content {
+                .know-tab-card {
+                    width: 100%;
+                }
+            }
+        }
+    }    
+
+    .kc-wrap {
+        .kc-slides-wrap {
+            .kc-slide__body h3 {
+                min-height: auto;
+            }
+        }
+    }
+
+    .contact-body {
+        .contact-info-wrap {
+            margin: 30px 0px 10px;
+            flex-direction: column;
+            border-left: none;
+            border-top: 5px solid #D51D25;
+    
+            .contact-info-card {
+                width: 100%;
+            }
+            .contact-info-card:nth-child(even){
+                & > div:last-child{
+                    margin-top: 25px;
+                }
+            }
+        }
+    
+        .contact-nri-wrap {
+            width: 100%;
+            .contact-nri-info-wrap {
+                width: 100%;
+                ul {
+                    flex-direction: column;
+                    padding: 10px 20px;
+    
+                    li:first-child {
+                        border-right: none;
+                        border-bottom: 1px dashed rgba($text-gray, .4);
+                        margin-right: 0px;
+                    }
+    
+                    &::before {
+                        left: -15px;
+                        height: 0;
+                        border-width: 58px 16px 58px 0px;
+                    }
+                }
+            }
+        }    
+    }
+
+    .contact-footer {
+        padding: 30px 0px;
+        .contact-footer-box-wrap {
+            flex-direction: column;
+
+            .contact-footer-box {
+                width: 100%;
+                padding: 25px 0px;
+                border-bottom: 1px dashed rgba($text-gray, .4);
+            }
+
+            .contact-footer-box:first-child {
+                padding-top: 0px;
+            }
+
+            .contact-footer-box:last-child {
+                padding-bottom: 0px;
+                border-bottom: none;
+                margin-top: 0;
+            }
+        }
+    } 
+    
+    .plan-navigation-wrap {
+        width: 90%;
+    }    
+
+    .plans-slider-wrap {
+        .plans-slides-wrap {
+            width: 90%;
+        }
+    }
+
+    .tools-wrap {
+        .calc-card-wrap {
+            width: 90%;
+        }
+    }    
+
+    .about-wrap {
+        .about-card-wrap {
+            .about-card-slider-wrap {
+                width: 90%;
+            }
+        }
+    }  
+    
+    .insurance-wrap {
+        .insurance-slider-wrap {
+            max-width: 90%;
+        }
+    }    
+}
+
+@include media-568 {
+    .hero-wrap .hero-img-carousel-wrap .banner-image {
+        img:first-child {
+            display: none;
+        }
+        img:last-child {
+            display: block;
+            object-position: left;
+        }
+    }
+    footer {
+        .bg-blue-gray {
+            .links-wrap {
+                flex-direction: column;
+
+                .links-box {
+                    .link-row {
+                        gap: 60px;
+
+                        ul {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tools-wrap .calc-card-wrap .calc-card__desc {
+        min-height: 80px;
+    }    
+}
+
+@include media-480 {
+
+    .page-head {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    header {
+        .top-nav__list {
+            text-align: center;
+        }
+
+        .bottom-nav {
+            nav {
+                text-align: center;
+            }
+        }        
+    }
+
+    .tools-wrap h1 + p {
+        margin-top: 15px;
+    }
+
+    .tools-wrap .calc-card-wrap {
+        .calc-card__img {
+            padding: 40px;
+        }
+        .calc-card__desc {
+            min-height: auto;
+            padding: 25px;
+        
+            .calc-card__desc--cont {
+                h3 {
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+                p {
+                    font-size: 19px;
+                    line-height: 23px;
+                    padding-bottom: 15px;
+                }
+            }
+        }  
+        
+        .slick-slide>div {
+            margin: 0px 20px;
+        }
+    }
+
+    .hero-footer {
+        .hero-footer-search {
+            padding: 0;
+        }
+    }    
+    
+    .plans-wrap {
+
+        .section-divide:nth-child(1) {
+            display: none;
+        }
+
+        .plan-navigation-wrap {
+            .plan-navigation-icon {
+                padding: 15px;
+            
+                &:hover .plan-navigation-icon__desc::after {
+                    bottom: -10px;
+                }                
+            }
+
+            .slick-slide > div {
+                margin: 4px 8px 15px;
+            }            
+        }        
+
+        .plans-slider-wrap {
+            padding: 0px 20px;
+
+            .plans-slides-wrap {
+                max-width: 370px;
+                margin: auto;
+
+                .plans-slide__body {
+                    ul {
+                        li {
+                            min-height: auto;
+                        }
+                    }                    
+                }                
+                
+                .slick-slide > div {
+                    margin: 10px;
+                    height: 100%;
+                }
+            }
+            
+        }
+    }
+
+    .know-wrap {
+        padding: 30px 25px;
+
+        .know-tab-wrap {
+            margin: 25px 0px 45px;
+        }
+
+        .know-tab-content-wrap {
+            .know-tab-content {
+                .know-tab-card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .kc-wrap {
+        padding: 50px 0px;
+        
+        .plans-slider-wrap {
+            padding: 0px 20px;
+
+            .kc-slides-wrap {
+                max-width: 370px;
+                margin: auto;
+
+                .plans-slide:not(.border) {
+                    display: none;
+                }
+            }
+
+            .plans-arr-left {
+                left: 0px;
+            }
+        
+            .plans-arr-right {
+                right: 0px;
+            }
+
+        }
+    }
+
+    .about-wrap {
+        .about-tile-wrap {
+            .about-tile-left {
+                padding: 40px 0px 20px;
+
+                .about-tile-left-block {
+                    .about-tile-left-nav {
+                        max-width: 100%;
+                    }
+                    .about-tile-left-quote {
+                        max-width: 85%;
+                        margin: 0 auto 28px;
+                        padding: 30px 30px 45px;
+
+                        h2 {
+                            margin-bottom: 33px;
+                        }
+
+                        p {
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+            .about-tile-right {
+                .about-tile-right-top {
+                    .about-tile-right-top-cont {
+                        padding: 0;
+                    }
+                }
+                .about-tile-right-bottom {
+                    .about-tile-right-bottom-cont {
+                        padding: 0;
+                    }
+                }
+            }            
+        }        
+        .about-card-wrap {
+
+            padding: 50px 0px;
+
+            position: relative;
+            .about-card-slider-wrap {
+                max-width: 370px;
+                margin: auto;
+
+                .about-card-slide {
+                    width: 100%;
+                }
+
+                // need to change after adding slick
+                // .about-card-slide:not(:first-child){
+                //     display: none;
+                // }
+                // need to change after adding slick
+            }
+        }
+    }
+
+    .contact-wrap {
+        .contact-body {
+            padding: 30px 0px 50px;
+        
+            .contact-info-wrap {
+                .contact-info-card:first-child {
+                    padding: 8px 40px 20px;
+                }
+                .contact-info-card:nth-child(even) {
+                    gap: 30px;
+                }
+            }
+
+        }
+        
+    }
+
+    .insurance-wrap {
+        
+        h3 {
+            padding: 30px 0px;
+        }        
+
+    } 
+    
+    footer {
+        .bg-blue-gray {
+            .links-wrap {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+        .bg-light-gray {
+            .inner-wrap {
+                flex-direction: column;
+                padding: 20px 30px 30px;
+
+                a {
+                    align-self: flex-end;
+                }
+            }
+        }
+
+        .bg-white {
+            padding: 30px 0px 10px;
+
+            display: none;
+        }
+
+        .show-more-btn-wrap {
+            display: block;
+        }
+ 
+        .bg-dark-gray {
+            padding: 30px 0px;
+
+            p:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@include media-414 {
+
+    .inner-wrap {
+        padding: 0px 20px;
+    }
+
+    .mobile-nav {
+        padding: 15px 20px;
+    }
+
+    .hero-wrap {
+        .hero-section {
+            .slider-wrap {
+                button.invert {
+                    margin: 12px 0px 0px;
+                }
+            }
+        }
+    }
+
+    .know-wrap {
+        .know-tab-wrap {
+            flex-wrap: wrap;
+            margin: 25px 0px 30px;
+
+            .know-tab::after {
+                display: none;
+            }
+
+            .know-tab:nth-child(2) {
+                border-width: 1px;
+            }
+        }
+    } 
+    
+    .insurance-wrap {
+        .insurance-footer-top {
+            .inner-wrap > ul > li:first-child {
+                margin: 0px -20px;
+                padding: 10px;
+            }
+        }    
+
+        .insurance-footer-bottom ul li:first-child {
+            text-align: center;
+        }
+    }    
+
+    .plan-navigation-wrap .slick-prev, .plans-slider-wrap .plans-slides-wrap .slick-prev ,
+    .tools-wrap .calc-card-wrap .slick-prev, .about-wrap .about-card-wrap .about-card-slider-wrap .slick-prev,
+    .insurance-wrap .insurance-slider-wrap .slick-prev {
+        left: -30px;
+    }
+    
+    .plan-navigation-wrap .slick-next, .plans-slider-wrap .plans-slides-wrap .slick-next,
+    .tools-wrap .calc-card-wrap .slick-next, .about-wrap .about-card-wrap .about-card-slider-wrap .slick-next,
+    .insurance-wrap .insurance-slider-wrap .slick-next {
+        right: -30px;
+    }   
+    
+    .about-wrap .about-card-wrap .about-card-slider-wrap .about-card-slide {
+        padding: 30px;
+    }    
+
+    .contact-body {
+
+        .contact-info-wrap {
+            margin: 20px 0px;
+        }
+        .contact-nri-wrap {
+            flex-direction: column;
+            border-top: 5px solid #D51D25;
+            border-left: none;
+        
+            .contact-nri-info-wrap {
+                margin: 0;
+                ul::before {
+                    display: none;
+                }
+            }
+        }
+
+    }    
+
+    footer {
+        .bg-blue-gray .links-wrap .links-box .link-row {
+            gap: 30px;
+        }  
+        .bg-light-gray .inner-wrap {
+            padding: 20px 20px 30px;
+        }
+    }
+}
+
+@include media-376 {
+    .kc-wrap .kc-slides-wrap .kc-slide__body {
+        padding: 25px 20px 20px;
+    } 
+    .about-wrap {
+        .about-card-wrap .about-card-slider-wrap .about-card-slide {
+            padding: 25px;
+        }
+        .about-tile-wrap {
+            .about-tile-left .about-tile-left-block {
+                .about-tile-left-quote {
+                    padding: 20px;
+                }
+            }
+            .about-tile-right {
+                .about-tile-right-top .about-tile-right-top-cont {
+                    flex-direction: column;
+                    width: 100%;
+    
+                    .border-left-dashed {
+                        border-top: 2px dashed #5eb4d775;
+                        padding-top: 15px;
+                        border-left: none;
+                        padding-left: 0;
+                    }   
+                    
+                    & > div {
+                        width: 100%;
+                        text-align: center;
+                    } 
+                }  
+                .about-tile-right-top, .about-tile-right-bottom {
+                   padding: 20px;
+               }
+               .about-tile-right-bottom .about-tile-right-bottom-cont {
+                   flex-direction: column;
+                   gap: 15px;
+                   width: 100%;
+
+                   .border-left-dashed {
+                        border-top: 2px dashed #5EB4D7;
+                        padding-top: 5px;
+                        border-left: none;
+                        padding-left: 0;                    
+                   }
+                   & > div {
+                        text-align: center;
+                   }
+               }                                             
+            }
+            .about-tile-left-nav {
+                padding: 15px;
+            }              
+        }                
+    }
+    .contact-body .contact-info-wrap .contact-info-card {
+        padding: 20px;
+    }
+
+    .insurance-wrap {
+        .insurance-footer-top ul {
+            flex-direction: column;
+            width: 100%;
+    
+            ul li {
+                border-right: none;
+    
+                &:nth-child(2) {
+                    border-top: 1px solid #D0DCE3;
+                    border-bottom: 1px solid #D0DCE3;
+                    margin: 0px -20px;
+                }
+            }
+        }
+
+        .insurance-footer-bottom {
+            .inner-wrap {
+                padding: 0;
+            }
+            ul {
+                flex-wrap: wrap;
+                li {
+                    width: 33.33%;
+    
+                    &:first-child {
+                        border-bottom: 1px solid #D0DCE3;
+                    }
+                    
+                    &:nth-child(2) {
+                        border-bottom: 1px solid #D0DCE3;
+                    }
+    
+                    &:nth-child(3) {
+                        border-right: none;
+                        border-bottom: 1px solid #D0DCE3;
+                    }
+    
+                    &:last-child {
+                        border-right: 1px solid #D0DCE3;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@include media-320 {
+    .page-head {
+        font-size: 30px !important;
+        line-height: 38px !important;
+    }
+    .know-wrap {
+        .know-tab-content-wrap {
+            .know-tab-content {
+                .know-tab-card {
+                    flex-direction: column;
+                    row-gap: 5px;
+                    margin-bottom: 25px;
+
+                    &__desc {
+                        padding: 0 !important;
+                    }
+                }
+            }
+        }
+    }    
+}

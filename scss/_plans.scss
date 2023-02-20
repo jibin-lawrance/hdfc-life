@@ -1,0 +1,271 @@
+.plan-navigation-wrap {
+    width: 100%;
+    margin: 40px 0px;
+    padding: 0 10%;
+    display: flex;
+
+    .plan-navigation-icon {
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+
+        &__desc {
+            position: relative;
+            color: $text-dark;
+            font-size: 15px;
+        }
+
+        &__desc::after {
+            content: '';
+            top: 0;
+            right: -20px;
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: #E4E7E9;
+        }
+
+        &__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 55px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .plan-navigation-icon:hover {
+        cursor: pointer;
+        position: relative;
+        outline: 2px solid $secondary-color;
+        padding: 12px;
+        margin-bottom: 22px;
+        border-bottom: 2px solid $secondary-color;
+
+        &::before {
+            position: absolute;
+            content: url('../images/common/top-left-red-arrow.svg');
+            left: -4px;
+            top: -4px;
+        }
+        &::after {
+            position: absolute;
+            content: url('../images/common/bottom-right-red-arrow.svg');
+            right: -6px;
+            bottom: -12px;
+        }
+
+        .plan-navigation-icon__desc {
+            p {
+                color: $primary-color;
+                font-weight: 900;
+            }
+        }
+        .plan-navigation-icon__desc::after {
+            content: url('../images/plans-icons/down-triangle-red.svg');
+            width: 0;
+            height: 0;
+            top: auto;
+            right: 58%;
+            bottom: -10px;
+        }
+
+        .plan-navigation-icon__img {
+            margin-bottom: 0px;
+        }
+
+    }
+
+    .plan-navigation-icon:last-child {
+        .plan-navigation-icon__desc::after {
+            display: none;
+        }
+
+        &:hover {
+            .plan-navigation-icon__desc::after {
+                display: block;
+            }            
+        }
+    }
+
+    @include arrows;
+    .plans-arr-left {
+        left: 0px;
+    }
+
+    .plans-arr-right {
+        right: 0px;
+    }
+
+    .plans-arr {
+        display: none;
+    }
+
+}
+
+.plans-slider-wrap {
+    position: relative;
+    width: 100%;
+    padding: 0px 90px;
+    margin: 0px auto 60px;
+    
+    .plans-slides-wrap {
+        display: flex;
+        gap: 30px;
+
+        .slick-slide > div {
+            margin: 10px 15px;
+            height: 100%;
+        }
+
+        .slick-track
+        {
+            display: flex !important;
+        }
+        
+        .slick-slide
+        {
+            height: inherit !important;
+        }   
+
+        @include slickArrows;
+    }
+
+    .plans-slide {
+        height: calc(100% - 20px);
+        width: 100%;
+        display: flex !important;
+        flex-direction: column;        
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0px 0px 3px #E4E7E9;
+
+        &__head {
+            background-color: $primary-color;
+        }
+
+        &__head--icon-wrap {
+            display: flex;
+            justify-content: end;
+            padding: 5px 5px 0px;
+
+            .plans-slide__head--icon {
+                padding: 7px;
+                background-color: $primary-light-color;
+                display: flex;
+                align-items: center;
+                border-radius: 3px 0px 0px 3px;
+            }
+
+            .plans-slide__head--icon:last-child {
+                border-left: 1px solid #ffffff38;
+                border-radius: 0px 3px 3px 0px;
+
+                img:last-child {
+                    display: none;
+                }
+            }
+
+            .plans-slide__head--icon:last-child.active {
+                img:first-child {
+                    display: none;
+                }
+
+                img:last-child {
+                    display: block;
+                }
+            }
+        }
+
+        &__head h2 {
+            color: $text-light;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 0px 30px 10px;
+        }
+
+        &__body {
+            padding: 15px 24px 30px;
+        }
+
+        &__body ul {
+            padding-left: 20px;
+        }
+        
+        &__body ul li {
+            position: relative;
+            font-size: 15px;
+            min-height: 40px;
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        &__body ul li::before {
+            position: absolute;
+            content: url('../images/plans-icons/point-arrow-right.svg');
+            left: -20px;
+        }
+
+        &__body--foot {
+            display: flex;
+            align-items: flex-end;
+
+            h2 {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 15px;
+                margin: 0px 10px;
+            }
+
+        }
+
+        &__foot {  
+            flex-grow: 1;
+            display: flex;
+            align-items: end;
+            
+            padding: 20px;
+            
+            button {
+                @include buttonLight;
+                font-size: 13px;
+                padding: 10px;
+                letter-spacing: 0.5px;
+            }
+
+            button.invert {
+                @include buttonDark;
+            }
+        }
+    }
+
+    .plans-slide:hover {
+        box-shadow: 0px 0px 10px #aaa;
+    }
+
+    @include arrows;
+
+    .plans-show-more {
+        position: absolute;
+        font-size: 12px;
+        line-height: 12px;
+        color: #012a47;
+        background-color: #69d3ff;
+        top: 46%;
+        right: 39px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 5px 40px 6px 8px;
+        border-radius: 3px;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
