@@ -300,18 +300,20 @@ nav ul li {
   text-transform: uppercase;
   cursor: pointer;
   background-color: white;
-  padding: 11px 23px;
+  padding: 10.5px 20.1px;
   border: 1px solid #ddd;
   border-radius: 3px;
   color: #D51D25;
   font-weight: 600;
   letter-spacing: 1px;
+  padding: 10px 16px;
 }
 .hero-wrap .hero-section .slider-wrap button.invert {
   background-color: #D51D25;
   color: #fff;
   border: 1px solid #D51D25;
   margin-left: 10px;
+  padding: 10px 16px;
 }
 .hero-wrap .hero-section .slider-wrap button.invert:hover {
   background-color: #C2131B;
@@ -677,7 +679,7 @@ nav ul li {
   text-transform: uppercase;
   cursor: pointer;
   background-color: white;
-  padding: 11px 23px;
+  padding: 10.5px 20.1px;
   border: 1px solid #ddd;
   border-radius: 3px;
   color: #D51D25;
@@ -956,7 +958,7 @@ nav ul li {
   text-transform: uppercase;
   cursor: pointer;
   background-color: white;
-  padding: 11px 23px;
+  padding: 10.5px 20.1px;
   border: 1px solid #ddd;
   border-radius: 3px;
   color: #D51D25;
@@ -968,6 +970,7 @@ nav ul li {
   margin-left: 10px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 14px;
 }
 .kc-wrap > button:hover {
   background-color: #C2131B;
@@ -1088,7 +1091,7 @@ nav ul li {
   text-transform: uppercase;
   cursor: pointer;
   background-color: white;
-  padding: 11px 23px;
+  padding: 10.5px 20.1px;
   border: 1px solid #ddd;
   border-radius: 3px;
   color: #D51D25;
@@ -1100,6 +1103,8 @@ nav ul li {
   margin-left: 10px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 14px;
+  padding: 10.5px 26.6px;
 }
 .tools-wrap > button:hover {
   background-color: #C2131B;
@@ -2753,6 +2758,13 @@ footer .bg-dark-gray p:first-child {
   .know-wrap .know-tab-wrap {
     margin: 25px 0px 45px;
   }
+  .know-wrap .know-tab-wrap .know-tab {
+    padding: 15.5px 20px;
+    width: auto;
+  }
+  .know-wrap .know-tab-wrap .know-tab.active {
+    max-width: 153px;
+  }
   .know-wrap .know-tab-content-wrap .know-tab-content .know-tab-card {
     width: 100%;
   }
@@ -2862,6 +2874,12 @@ footer .bg-dark-gray p:first-child {
   }
   .know-wrap .know-tab-wrap .know-tab::after {
     display: none;
+  }
+  .know-wrap .know-tab-wrap .know-tab {
+    width: 100%;
+  }
+  .know-wrap .know-tab-wrap .know-tab.active {
+    max-width: 100%;
   }
   .know-wrap .know-tab-wrap .know-tab:nth-child(2) {
     border-width: 1px;
